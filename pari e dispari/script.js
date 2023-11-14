@@ -24,17 +24,17 @@ if (chosenNum >= minNumber && chosenNum <= maxNumber) {
 
     const numberSum = chosenNum + pcNumber;
 
-    function evenOrOdd(numberSum) {
-        if (numberSum % 2 === 0) {
+    function evenOrOdd(number) {
+        if (number % 2 === 0) {
             return true;
         } return false;
     }
 
     const result = evenOrOdd(numberSum);
 
-    if (chosenTeam === "PARI" && result === true) {
+    if (chosenTeam === "PARI" && evenOrOdd(numberSum)) {
         console.log("Congratulazioni, hai vinto!")
-    } else if (chosenTeam === "DISPARI" && result === false) {
+    } else if (chosenTeam === "DISPARI" && !evenOrOdd(numberSum)) {
         console.log("Congratulazioni, hai vinto!")
     } else {
         console.log("Mi dispiace, hai perso!")
