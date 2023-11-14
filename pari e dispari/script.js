@@ -5,7 +5,7 @@ function generateANumber() {
     return generatedNumber;
 }
 
-function evenOrOdd(number) {
+function isEven(number) {
     if (number % 2 === 0) {
         return true;
     } return false;
@@ -33,9 +33,9 @@ if (chosenNum >= minNumber && chosenNum <= maxNumber) {
     console.log("Il pc ha generato " + pcNumber);
     const numberSum = chosenNum + pcNumber;
 
-    if (chosenTeam === "PARI" && evenOrOdd(numberSum)) {
+    if (chosenTeam === "PARI" && isEven(numberSum)) {
         console.log("Congratulazioni, hai vinto!")
-    } else if (chosenTeam === "DISPARI" && !evenOrOdd(numberSum)) {
+    } else if (chosenTeam === "DISPARI" && !isEven(numberSum)) {
         console.log("Congratulazioni, hai vinto!")
     } else {
         console.log("Mi dispiace, hai perso!")
