@@ -3,7 +3,7 @@
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
-/*
+
 //METODO CON CICLO FOR -----------------------------------------------------------------
 
 const word = prompt("Inserisci la parola che vuoi verificare");
@@ -26,8 +26,6 @@ if (word === risultato) {
 } else {
     alert(`${word} - NON è una parola palindroma`);
 }
-*/
-
 
 /*
 
@@ -49,7 +47,7 @@ if (word === risultato) {
 }
 
 */
-
+/*
 
 // METODO SENZA FUNZIONE -------------------------------------------------------------
 
@@ -60,3 +58,5 @@ if (word === reversedWord) {
 } else {
     alert(`${word} - NON è una parola palindroma`);
 }
+
+/*
