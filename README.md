@@ -37,3 +37,5 @@ Dichiariamo chi ha vinto.
 
 #### SVOLGIMENTO
 
+In questo esercizio chiediamo all'utente di scegliere se vuole giocare con PARI o DISPARI e lo assegniamo ad una variabile. Gli facciamo scegliere un numero da 1 a 5 (1 e 5 inclusi), che andremo ad assegnare ad una variabile. Successivamente creiamo una funzione che genera un numero randomico usando `Math.floor(Math.random() * 5) + 1`. Assegniamo il valore del return della nostra funzione ad una variabile, e la sommiamo alla variabile che contiene il numero utente. Creiamo una funzione che stabilisce se il numero è pari o dispari usando `somma % 2 === 0`. Se la funzione ci ritorna true il numero è pari, altrimenti è dispari. Creiamo una condizione secondo la quale se l'utente  ha scelto pari e il risultato è true, avrà vinto, altrimenti avrà perso. Facciamo la stessa cosa per dispari e risultato false.
+
