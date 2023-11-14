@@ -10,7 +10,17 @@ Creare una funzione per capire se la parola inserita è palindroma
 
 #### SVOLGIMENTO
 
-Questo esercizio ci chiede di far inserire all'utente una parola a piacere, per verificare se sia palindroma o meno, ovvero verifica se la parola inserita. è uguale a se stessa scritta al contrario. Per lo svoglimento di questo esercizio ci possiamo servire di un ciclo for per costruire un'array con le lettere della parola, e poi un altro ciclo for con scorrimento inverso per costruire un array con le lettere al contrario. Alla fine dovremo confrontare, sempre con un ciclo se tutti gli indici in successione del primo array, sono uguali indice (dato da lunghezza array - contatore) della parola al contrario.
+Questo esercizio ci chiede di far inserire all'utente una parola a piacere, per verificare se sia palindroma o meno, ovvero verifica se la parola inserita. è uguale a se stessa scritta al contrario. Per lo svoglimento di questo esercizio ci possiamo servire di un ciclo for per costruire un'array con le lettere della parola, e poi un altro ciclo for con scorrimento inverso per costruire un array con le lettere al contrario. Alla fine dovremo confrontare, sempre con un ciclo, se tutti gli indici in successione del primo array, sono uguali indice (dato da lunghezza array - contatore) della parola al contrario.
+
+_Considerazioni post esercizio_
+
+- Nell'ultima parte dell'esercizio possiamo semplicemente andare a confrontare gli array con lo stesso indice, perchè se una parola è palindroma avremo due array uguali. Quindi la condizione sarà:
+```JS
+ if (wordArray[i] === reversedWordArray[i]) {
+            return true;
+        } 
+        return false;
+```
 
 ------
 

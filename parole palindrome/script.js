@@ -29,8 +29,8 @@ function palindroma(word) {
     for (let i = 0; i < word.length; i++) {
         if (wordArray[i] === reversedWordArray[i]) {
             return true;
-
-        } return false;
+        }
+        return false;
     }
 }
 
