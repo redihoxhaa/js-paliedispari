@@ -5,67 +5,52 @@
 
 //METODO CON CICLO FOR
 
-/*
 
 const word = prompt("Inserisci la parola che vuoi verificare");
 
-function palindroma(word) {
-
-    // Creazione array della parola
-    const wordArray = [];
-    for (let i = 0; i < word.length; i++) {
-        wordArray.push(word[i]);
-    }
-
-    console.log("wordarray è " + wordArray)
+function reverseIt(word) {
 
     // Creazione array della parola inversa
-    const reversedWordArray = [];
+    let reversedWord = '';
     for (let i = word.length - 1; i >= 0; i--) {
-        reversedWordArray.push(word[i]);
+        reversedWord += word[i];
     }
 
-    console.log("reversedwordarray è " + reversedWordArray)
-
-
-    // Verifica dell'uguaglianza
-
-    for (let i = 0; i < word.length; i++) {
-        if (wordArray[i] === reversedWordArray[i]) {
-            return true;
-        }
-        return false;
-    }
+    return reversedWord;
 }
 
-const risultato = palindroma(word);
+const risultato = reverseIt(word);
 
-if (risultato === true) {
+if (word === risultato) {
     alert(`${word} - è una parola palindroma`);
 } else {
     alert(`${word} - NON è una parola palindroma`);
 }
 
-*/
+
 
 // METODO SENZA CICLO
 
-const word = prompt("Inserisci la parola che vuoi verificare");
+// const word = prompt("Inserisci la parola che vuoi verificare");
 
-function palindroma(word) {
-    const wordArray = word.split("");
-    const reversedArray = wordArray.reverse();
-    const wordReverse = reversedArray.join("");
-    if (word === wordReverse) {
-        return true;
-    }
-    return false;
-}
+// function palindroma(word) {
+//     const wordArray = word.split("");
+//     console.log(wordArray);
+//     const reversedArray = word.split("").reverse();
+//     console.log(reversedArray);
 
-const risultato = palindroma(word);
+//     // const wordReverse = reversedArray.join("");
+//     // const wordReverse = word.split("").reverse().join("");
+//     if (JSON.stringify(wordArray) === JSON.stringify(reversedArray)) {
+//         return true;
+//     }
+//     return false;
+// }
 
-if (risultato === true) {
-    alert(`${word} - è una parola palindroma`);
-} else {
-    alert(`${word} - NON è una parola palindroma`);
-}
+// const risultato = palindroma(word);
+
+// if (risultato === true) {
+//     alert(`${word} - è una parola palindroma`);
+// } else {
+//     alert(`${word} - NON è una parola palindroma`);
+// }
