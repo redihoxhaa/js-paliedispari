@@ -4,7 +4,7 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 
 /*
-//METODO CON CICLO FOR
+//METODO CON CICLO FOR -----------------------------------------------------------------
 
 const word = prompt("Inserisci la parola che vuoi verificare");
 
@@ -29,7 +29,9 @@ if (word === risultato) {
 */
 
 
-// METODO SENZA CICLO
+/*
+
+// METODO SENZA CICLO -----------------------------------------------------------------
 
 const word = prompt("Inserisci la parola che vuoi verificare");
 
@@ -41,6 +43,19 @@ function reverseIt(word) {
 const risultato = reverseIt(word);
 
 if (word === risultato) {
+    alert(`${word} - è una parola palindroma`);
+} else {
+    alert(`${word} - NON è una parola palindroma`);
+}
+
+*/
+
+
+// METODO SENZA FUNZIONE -------------------------------------------------------------
+
+const word = prompt("Inserisci la parola che vuoi verificare");
+const reversedWord = word.split("").reverse().join("");
+if (word === reversedWord) {
     alert(`${word} - è una parola palindroma`);
 } else {
     alert(`${word} - NON è una parola palindroma`);
